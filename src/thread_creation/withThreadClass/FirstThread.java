@@ -10,7 +10,12 @@ public class FirstThread extends Thread {
 
     private void execute() {
         for (Integer index = 1; index <= this.finalIndex; index++) {
-            System.out.println("First Thread: " + index);
+            try {
+                System.out.println("First Thread: " + index);
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
         }
     }
 
