@@ -9,5 +9,13 @@ public class Main {
         firstThread.start();
 //        starting the second thread
         secondThread.start();
+
+        try {
+            firstThread.join();
+            secondThread.join();
+        } catch (InterruptedException e) {
+            System.out.println(e.getMessage());
+        }
+        System.out.println("Finished executing both threads.");
     }
 }

@@ -10,7 +10,12 @@ public class FirstRunnable implements Runnable {
 
     private void execute() {
         for (Integer index = 1; index <= this.finalIndex; index++) {
-            System.out.println("First Runnable: " + index);
+            try {
+                Thread.sleep(1000);
+                System.out.println("First Runnable: " + index);
+            } catch (InterruptedException e) {
+                System.out.println(e.getMessage());
+            }
         }
     }
 
