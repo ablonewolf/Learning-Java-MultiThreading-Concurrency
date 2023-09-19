@@ -9,7 +9,7 @@ public class SecondRunnable implements Runnable {
     }
 
     private void execute() {
-        for (Integer index = 1; index <= finalIndex; index++) {
+        for (int index = 1; index <= finalIndex; index++) {
             try {
                 Thread.sleep(2000);
                 System.out.println("Second Runnable: " + index);

@@ -9,7 +9,7 @@ public class FirstThread extends Thread {
     }
 
     private void execute() {
-        for (Integer index = 1; index <= this.finalIndex; index++) {
+        for (int index = 1; index <= this.finalIndex; index++) {
             try {
                 System.out.println("First Thread: " + index);
                 Thread.sleep(1000);

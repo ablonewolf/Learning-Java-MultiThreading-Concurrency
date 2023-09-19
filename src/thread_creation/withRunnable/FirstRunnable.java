@@ -9,7 +9,7 @@ public class FirstRunnable implements Runnable {
     }
 
     private void execute() {
-        for (Integer index = 1; index <= this.finalIndex; index++) {
+        for (int index = 1; index <= this.finalIndex; index++) {
             try {
                 Thread.sleep(1000);
                 System.out.println("First Runnable: " + index);

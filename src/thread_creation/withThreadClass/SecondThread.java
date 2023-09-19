@@ -9,7 +9,7 @@ public class SecondThread extends Thread {
     }
 
     private void execute() {
-        for (Integer index = 1; index <= this.finalIndex; index++) {
+        for (int index = 1; index <= this.finalIndex; index++) {
             try {
                 System.out.println("Second Thread: " + index);
                 Thread.sleep(2000);
