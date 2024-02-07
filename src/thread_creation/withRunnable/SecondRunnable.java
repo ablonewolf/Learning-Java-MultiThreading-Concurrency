@@ -12,7 +12,7 @@ public class SecondRunnable implements Runnable {
         for (int index = 1; index <= finalIndex; index++) {
             try {
                 Thread.sleep(2000);
-                System.out.println("Second Runnable: " + index);
+                System.out.println("Second Runnable: " + index + " " + Thread.currentThread().getName());
             } catch (InterruptedException e) {
                 System.out.println(e.getMessage());
             }

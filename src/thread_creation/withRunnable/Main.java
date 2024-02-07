@@ -13,6 +13,7 @@ public class Main {
         try {
             firstThread.join();
             secondThread.join();
+            System.out.println(Thread.currentThread().getName());
         } catch (InterruptedException e) {
             System.out.println(e.getMessage());
         }

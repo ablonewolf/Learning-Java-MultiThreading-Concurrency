@@ -12,7 +12,7 @@ public class FirstRunnable implements Runnable {
         for (int index = 1; index <= this.finalIndex; index++) {
             try {
                 Thread.sleep(1000);
-                System.out.println("First Runnable: " + index);
+                System.out.println("First Runnable: " + index + " " + Thread.currentThread().getName());
             } catch (InterruptedException e) {
                 System.out.println(e.getMessage());
             }
